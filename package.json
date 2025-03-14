@@ -5,6 +5,8 @@
     "packages/*"
   ],
   "scripts": {
+    "dev": "yarn workspaces foreach --all --parallel --interlaced run dev",
+    "build": "yarn workspaces foreach --all --parallel run build",
     "api:build": "yarn workspace api build",
     "api:dev": "yarn workspace api dev",
     "ui:dev": "yarn workspace ui dev"
