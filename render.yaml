@@ -5,7 +5,7 @@ services:
     region: frankfurt
     repo: https://github.com/sbenfares/storyli
     branch: main
-    buildCommand: cd packages/api && yarn install && yarn build
+    buildCommand: cd packages/api && yarn install --immutable && yarn build
     startCommand: cd packages/api && yarn start
     envVars:
       - key: NODE_VERSION

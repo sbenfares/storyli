@@ -3,7 +3,8 @@
   "packageManager": "yarn@3.6.1",
   "scripts": {
     "build": "tsc",
-    "dev": "tsx src/server.ts"
+    "dev": "tsx src/server.ts",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@fastify/swagger": "^9.4.2",
