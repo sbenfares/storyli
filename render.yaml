@@ -5,6 +5,7 @@ services:
     region: frankfurt
     repo: https://github.com/sbenfares/storyli
     branch: main
+    rootDir: apps/api
     buildCommand: cd packages/api && yarn install --immutable
     startCommand: cd packages/api && yarn start
     envVars:
@@ -16,3 +17,15 @@ services:
         value: 3001
       - key: NODE_ENV
         value: production
+  - type: web
+    name: storyli-web
+    runtime: node
+    region: frankfurt
+    repo: https://github.com/sbenfares/storyli
+    branch: main
+    rootDir: apps/ui
+    buildCommand: yarn install --immutable && yarn build
+    startCommand: yarn start
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: https://storyli-api.onrender.com
