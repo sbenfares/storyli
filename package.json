@@ -11,7 +11,7 @@
     "api:dev": "yarn workspace api dev",
     "ui:dev": "yarn workspace ui dev"
   },
-  "packageManager": "yarn@4.3.1+sha224.934d21773e22af4b69a7032a2d3b4cb38c1f7c019624777cc9916b23",
+  "packageManager": "yarn@3.6.1",
   "installConfig": {
     "hoistingLimits": "workspaces"
   }
