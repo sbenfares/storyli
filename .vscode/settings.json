@@ -8,5 +8,35 @@
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*/lib": true,
+    "**/*/build": true,
+    "**/.webpack": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/tmp": true,
+    "**/.next": true,
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/*/lib": true,
+    "**/*/dist": true,
+    "**/*/build": true,
+    "**/.webpack": true,
+    "**/node_modules": false
+  },
+  "search.exclude": {
+    "**/*/lib": true,
+    "**/*/dist": true,
+    "**/*/build": true,
+    "**/.webpack": true,
+    "**/.next": true,
+    "**/node_modules": true
   }
 }
